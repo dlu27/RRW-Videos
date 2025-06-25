@@ -3,18 +3,23 @@
 <head>
   <meta charset="utf-8">
   <title>RRW Looping Video</title>
-  <style>body, html { margin:0; padding:0; height:100% }</style>
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; }
+  </style>
 </head>
 <body>
-  <video 
-    style="width:100%; height:100%;" 
-    autoplay 
-    muted 
-    loop 
-    playsinline 
+  <video
+    style="width: 100%; height: 100%;"
+    autoplay
+    muted
+    loop
+    playsinline
     controls
+    controlsList="nodownload nofullscreen noremoteplayback"
+    disablePictureInPicture
+    oncontextmenu="return false;"
   >
-    <source 
+    <source
       src="https://raw.githubusercontent.com/dlu27/RRW-Videos/main/RRW_Career_and_Life_Design.mp4" 
       type="video/mp4"
     >
